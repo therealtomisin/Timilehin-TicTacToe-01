@@ -1,0 +1,33 @@
+body{
+    margin: 0;
+    background-color:black;
+    color: antiquewhite;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+.x-o{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.x, .o{
+    width: 80px;
+    background-color: white;;
+    color: black;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 5px;
+}
+input{
+    height: 50px;
+}
+.main-tictactoe{
+    margin: auto;
+}
+.input-container{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 50px 50px 50px;
+    justify-content: center;
+    align-content: center;
+
+}
