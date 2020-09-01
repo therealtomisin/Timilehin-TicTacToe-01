@@ -11,19 +11,13 @@ let winnerMessage = document.createElement('span')
 const computer = document.querySelector('.computer')
 
 
-// game functions
-changeLetter = (letter) => {
-    if (letter === 'x'){
-        return xValue
-    } else {
-        return oValue
-    }
-}
+//game functions
 
  displayWinner = (winner) => {
     mainSection.appendChild(winnerMessage)
     winnerMessage.textContent = `${winner} has won!`   
 }
+
 updateCell = (e) => {
     classList = e.target.classList
     if (classList[1] === xClass || classList[1] === oClass){
@@ -37,6 +31,7 @@ updateCell = (e) => {
         gameWin()
     }
 }
+
 removeEvents = () => {
     myCells.forEach((cell)=>{
         cell.removeEventListener('click', updateCell)
@@ -87,18 +82,19 @@ gameWin = () => {
         winnerMessage.textContent = `Draw!`
     }
     xIsNext = !xIsNext
-    }
-    clearCells = () => {
-        myCells.forEach((cell)=>{
-            cell.classList.remove(xClass);
-            cell.classList.remove(oClass)
-        })
-        winnerMessage.remove()
-        xIsNext = true;
-        myCells.forEach((cell)=>{
-            cell.addEventListener('click', updateCell)
-        })
-    }
+}
+
+clearCells = () => {
+    myCells.forEach((cell)=>{
+        cell.classList.remove(xClass);
+        cell.classList.remove(oClass)
+    })
+     winnerMessage.remove()
+    xIsNext = true;
+     myCells.forEach((cell)=>{
+        cell.addEventListener('click', updateCell)
+    })
+}
     
 
 
