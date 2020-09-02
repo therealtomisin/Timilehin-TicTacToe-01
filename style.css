@@ -31,7 +31,6 @@ body{
     box-shadow: 5px;
 }
 .game-body{
-    height: 1vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
