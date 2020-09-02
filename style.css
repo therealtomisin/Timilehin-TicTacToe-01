@@ -47,6 +47,9 @@ body{
     justify-content: center;
     align-items: center;
 }
+h3{
+    text-align: center;
+}
 table{
     border-collapse: collapse;
     position: relative;
