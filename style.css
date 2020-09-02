@@ -30,10 +30,16 @@ body{
     border-radius: 5px;
     box-shadow: 5px;
 }
-a{
-    text-decoration: none;
+.game-body{
+    height: 1vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
 }
 .main-tictactoe{
+    left: 100px;
+    top: 100px;
     margin: 25px;
     padding: 120px;
     display: flex;
@@ -92,6 +98,21 @@ tr td:last-child{
 .reset:hover{
     cursor: pointer;
     
+}
+@media (max-width: 500px){
+    .main-tictactoe{
+        padding: 0;
+    }
+    td{
+        border: 2px solid white;
+        height: 70px;
+        width: 70px; 
+    }
+    .x::before{
+        font-size: 35px;
+    }.o::before{
+        font-size: 35px;
+    }
 }
 
 
