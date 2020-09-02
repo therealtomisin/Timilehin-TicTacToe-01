@@ -4,31 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
     <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section class="main-tictactoe">
-        <table class="board">
-            <tr>
-                <td class="cell" id="0"></td>
-                <td class="cell" id="1"></td>
-                <td class="cell" id="2"></td>
-            </tr>
-            <tr>
-                 <td class="cell" id="3"></td>
-                 <td class="cell" id="4"></td>
-                 <td class="cell" id="5"></td>
-            </tr>
-            <tr>
-                 <td class="cell" id="6"></td>
-                 <td class="cell" id="7"></td>
-                 <td class="cell" id="8"></td>
-            </tr>
-        </table>
-        
-        <span class="reset">Reset</span>
-     </section>
-     <script src="javascript/javascript.js"></script>
+    <section>
+        <div class="welcome-page">
+            <h2 class="welcome-header">Who do you want to play with?</h2>
+            <div class="players">
+                <a href="game.html">
+                    <input type="button" value="Computer" class="computer">
+                </a>
+                <a href="game.html">
+                    <input type="button" value="Pick Opponent" class="multiplayer">
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- <script src="javascript.js"></script> -->
 </body>
 </html>
