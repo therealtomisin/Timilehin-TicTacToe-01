@@ -50,6 +50,9 @@ body{
 h3{
     text-align: center;
 }
+a{
+    text-decoration: none;
+}
 table{
     border-collapse: collapse;
     position: relative;
